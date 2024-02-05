@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="666.0" prefWidth="284.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="indoorgame.UserInterfaceController">
+
+    <!-- Game Registration Section -->
+    <VBox layoutX="10.0" layoutY="11.0" spacing="10" style="-fx-background-color: #FFFF99; -fx-padding: 10; -fx-border-color: #666666;">
+        <Label style="-fx-font-size: 18; -fx-font-weight: bold;" text="Game Registration" />
+
+        <HBox spacing="10">
+            <Label text="Game Name:" />
+            <TextField fx:id="gameNameField" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Game Type:" />
+            <TextField fx:id="gameTypeField" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Board Number:" />
+            <TextField fx:id="boardNumberField" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Max Players:" />
+            <TextField fx:id="maxPlayersField" />
+        </HBox>
+
+        <Button onAction="#handleGameRegistration" style="-fx-background-color: #3366CC; -fx-text-fill: white;" text="Register Game" />
+    </VBox>
+
+    <!-- Student Registration Section -->
+    <VBox layoutX="9.0" layoutY="245.0" spacing="10" style="-fx-background-color: #99FF99; -fx-padding: 10; -fx-border-color: #666666;">
+        <Label style="-fx-font-size: 18; -fx-font-weight: bold;" text="Student Registration" />
+
+        <HBox spacing="10">
+            <Label text="Student Name:" />
+            <TextField fx:id="studentNameField" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Student ID:" />
+            <TextField fx:id="studentIdField" />
+        </HBox>
+
+        <Button onAction="#handleStudentRegistration" style="-fx-background-color: #99CC33; -fx-text-fill: white;" text="Register Student" />
+    </VBox>
+
+    <!-- Slot Booking Section -->
+    <VBox layoutX="10.0" layoutY="408.0" prefHeight="161.0" prefWidth="252.0" spacing="10" style="-fx-background-color: #FFCCCC; -fx-padding: 10; -fx-border-color: #666666;">
+        <Label style="-fx-font-size: 18; -fx-font-weight: bold;" text="Slot Booking" />
+
+        <HBox spacing="10">
+            <Label text="Game ID:" />
+            <TextField fx:id="gameIdField" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Student ID:" />
+            <TextField fx:id="studentIdSlotField" />
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Date Time:" />
+            <TextField fx:id="dateTimeField" />
+        </HBox>
+
+        <Button onAction="#handleSlotBooking" style="-fx-background-color: #FF6666; -fx-text-fill: white;" text="Book Slot" />
+    </VBox>
+</AnchorPane>
